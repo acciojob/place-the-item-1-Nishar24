@@ -1,16 +1,25 @@
 
 /* Your CSS Code here. */
-.holder {
-    display: flex;            /* Activates flexbox on the holder */
-    justify-content: center;  /* Centers item-1 horizontally */
-    align-items: center;      /* Centers item-1 vertically */
-    width: 100vw;             /* Makes holder take the full viewport width */
-    height: 100vh;            /* Makes holder take the full viewport height */
-    margin: 0;                /* Removes any default margin */
-}
+ <style>
+        /* Holder class styling */
+        .holder {
+            display: flex;
+            flex-wrap: wrap; /* Allows items to wrap to the next row if needed */
+            justify-content: space-between; /* Spaces items evenly, first and last touching screen edges */
+            padding: 10px; /* Adds space around the container */
+            background-color: #f4f4f4; /* Light background for illustration */
+            border: 2px solid #ccc; /* Border for the holder container */
+        }
 
-.item-1 {
-    width: 100px;             /* Sets the width of item-1 */
-    height: 100px;            /* Sets the height of item-1 */
-    background-color: red;    /* Sets the background color of item-1 */
-}
+        /* Item class styling */
+        .item {
+            flex: 1 1 150px; /* Grow, shrink, and set a minimum size of 150px */
+            margin: 10px; /* Space between items */
+            background-color: #87ceeb; /* Light blue background for items */
+            color: #fff; /* White text color */
+            text-align: center; /* Center text inside items */
+            padding: 20px; /* Space inside items */
+            border-radius: 5px; /* Rounded corners for items */
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visual effect */
+        }
+    </style>
